@@ -1,9 +1,35 @@
-<div class="header-container">
-  <header>
-      <ul class="nav">
-        <!--Change the  URL here if working on an absolute domain-->
-        <li><a href="/yujenlin/"><span class="mega-octicon octicon-terminal" style="margin-right: 6px;"></span>Portfolio Site</a></li>
-        <li><a href="{{ site.baseurl }}"><span class="mega-octicon octicon-person" style="margin-right: 6px;"></span>Blog</a></li>
-      </ul>
-  </header>
-</div>
+<header class="site-header">
+
+	<div class="branding">
+		{% if site.theme.gravatar %}
+    <a href="{{ site.baseurl }}/">
+      <img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+    </a>
+		{% else if site.theme.avatar %}
+		<a href="{{ site.baseurl }}/">
+            <img class="avatar" src="{{site.baseurl}}/img/{{ site.theme.avatar }}" alt=""/>
+    </a>
+		{% endif %}
+		
+		<h1 class="site-title">
+			<a href="{{ site.baseurl }}/">{{ site.theme.title }}</a>
+		</h1>
+	</div>
+	
+	<nav class="site-nav">
+		<ul>
+			<!-- {% for page in site.pages %} -->
+			<!-- 	{% if page.title and page.hide != true %} -->
+			<!-- 	<li> -->
+			<!-- 		<a class="page&#45;link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> -->
+			<!-- 	</li> -->
+			<!-- 	{% endif %} -->
+			<!-- {% endfor %} -->
+
+			<a class="page-link" href="/yujenlin">Portfolio Site</a>
+			<!-- Social icons from Font Awesome, if enabled -->
+			{% include icons.html %}
+		</ul>
+	</nav>
+	
+</header>

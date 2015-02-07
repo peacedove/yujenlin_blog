@@ -1,33 +1,67 @@
-name: Yu-Jen Lin's Blog
-markdown: redcarpet
-highlighter: true
-baseurl: "/yujenlin_blog"
-paginate: 8
-description: Yu-Jen Lin's Blog 
-intro: Just a Memo
-logo:             logo.png
-disqus_shortname:
-# url: http://gotchacode.com
-#Comment out url when working locally to resolve base urls correctly
-#url:
+# SITE CONFIGURATION
+baseurl: "/yujenlin_blog" # the subpath of your site, e.g. /blog/
+url: "http://peacedove.github.io/" # the base hostname & protocol for your site
 
-# Owner/author information
-owner:
-  name:           <your-name-here>
-  avatar:         <avatar-image-link>
-  email:          <your-email-address>
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  github:
-  stackexchange:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Yu-Jen Lin's Blog 
+  avatar: avatar.png
+  gravatar: # email md5 hash
+  description: "A website with blog posts and pages" # used by search engines
+  
+  # Header and footer text
+  header_text: >
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     
+     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+  
+  # Icons
+  rss: false
+  email_address: "peacedove5210@gmail.com"
+  behance:
+  bitbucket: 
+  dribbble: 
+  facebook: 
+  flickr: 
+  github: "peacedove"
+  google_plus: 
+  instagram: 
+  linkedin:  # full URL
+  pinterest: 
+  reddit: 
+  soundcloud: 
+  stack_exchange:  # full URL
+  steam: 
+  tumblr: 
+  twitter: 
+  wordpress: 
+  youtube: 
+  
+  # Scripts
+  google_analytics: # tracking id, e.g. "UA-000000-01"
+  disqus_shortname:
+  
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+  
+  # Colors, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
 
-# Links to include in top navigation
-# For external links add external: true
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
