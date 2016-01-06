@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "/yujenlin_blog" # the subpath of your site, e.g. /blog/
-url: "http://peacedove.github.io/" # the base hostname & protocol for your site
+url: "http://yjlintw.github.io/" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -18,13 +18,13 @@ theme:
   
   # Icons
   rss: false
-  email_address: "peacedove5210@gmail.com"
+  email_address: "yjlin5210@gmail.com"
   behance:
   bitbucket: 
   dribbble: 
   facebook: 
   flickr: 
-  github: "peacedove"
+  github: "yjlintw"
   google_plus: 
   instagram: 
   linkedin:  https://www.linkedin.com/in/yujenlin1
